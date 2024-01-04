@@ -1,0 +1,77 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.holder{
+    height: 138px;
+    width: 457px;
+    background-color: white;
+}
+.main{
+   
+    margin: 4px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    color: black;
+}
+
+.content{
+    margin-left: 14px;
+    background-color: white;
+    color: black;
+}
+
+.username{
+    margin-bottom: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: white;
+    color: black;
+}
+
+.tweet{
+    font-family: 'Roboto',sans-serif;
+    font-size: 20px;
+    background-color: white;
+    color: black;
+}
+
+.photo{
+    width: 130px;
+    height: 130px;
+}
+
+.buttons{
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight:500;
+    font-size: 15px;
+    background-color: white;
+    color: #858991;
+   
+}
+
+.icon{
+    width: 20px;
+    height: 20px;
+    margin-right: 14px;
+    background-color: white;
+    color: black;
+}
+
+.stats{
+    margin-right: 24px;
+    background-color: white;
+    color: #858991;
+}
