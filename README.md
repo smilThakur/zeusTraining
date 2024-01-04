@@ -1,3 +1,3 @@
 # zeusTraining
-Task 1
-new card
+Task 1 
+tweet card
