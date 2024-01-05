@@ -1,0 +1,75 @@
+body{
+    background-color:blanchedalmond;
+    
+}
+
+.title{
+    background-color: maroon;
+    color: blanchedalmond;
+    font-family:Arial, Helvetica, sans-serif;
+    font-style: italic;
+    text-align: center;
+    padding: 5px;
+   
+    
+}
+
+h1, h2{
+    margin: 0px;
+}
+
+.title_bottom{
+    height: 10px;
+    background-color: red;
+    width: 100%;
+}
+
+.sub_title{
+    background-color: green;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+    margin-top: 8px;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.list{
+    color: maroon;
+    font-style: italic;
+}
+.zeus_link{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.zeus_link > a{
+    text-decoration: none;
+}
+
+.google_link{
+    background-color: white;
+    width: 200px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.heading{
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+}
+
+.random_table{
+    background-color: gray;
+    border: 2px solid black;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

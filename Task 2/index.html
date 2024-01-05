@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>My first web page</title>
+</head>
+
+<body>
+    <div class="title">
+        <h1>My first web page</h1>
+    </div>
+    <div class="title_bottom">
+
+    </div>
+    <div class="sub_title">
+        <h2>What is this</h2>
+    </div>
+    <p>Welcome to <em>my first webpage</em>. I created this webpage without the assistance of a webpage editor. Just my
+        little
+        text editor and a keen <strong>understanding of html.</strong></p>
+    <div class="sub_title">
+        <h2>Why this is</h2>
+    </div>
+    <div class="list">
+        <ul>
+            <li>To learn HTML</li>
+            <li>List element</li>
+            <ol>
+                <li>Home</li>
+                <li>FAQ</li>
+                <li>Contact</li>
+                <li>About</li>
+            </ol>
+            <li>Here I have created ordered and unordered list</li>
+        </ul>
+    </div>
+
+    <div class="sub_title">
+        <h2>ZeusLearning.com</h2>
+    </div>
+    <div class="zeus_link">
+        <a href="https://www.zeuslearning.com/" target="_blank">This link will open Zeuslearning.com
+            in
+            new tab</a>
+
+    </div>
+    <div class="sub_title">
+        <h2>On click of following link image navigate to Google.com</h2>
+
+    </div>
+
+    <a href="https://google.co.in" target="_blank">
+        <div class="google_link">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Google_Logo.svg/1024px-Google_Logo.svg.png"
+                width="100px" />
+        </div>
+
+    </a>
+
+    <div class="heading">
+        <h2>Some random table</h2>
+    </div>
+
+    <table class="random_table" border="2px solid">
+        <tr>
+            <td>
+                Row1, cell1
+            </td>
+            <td>
+                Row1, cell2
+            </td>
+            <td>
+                Row1, cell3
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Row2, cell1
+            </td>
+            <td>
+                Row2, cell2
+            </td>
+            <td>
+                Row2, cell3
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Row3, cell1
+            </td>
+            <td>
+                Row3, cell2
+            </td>
+            <td>
+                Row3, cell3
+            </td>
+        </tr>
+    </table>
+
+    <div class="heading">
+        <h2>Some random form</h2>
+
+    </div>
+    <p>
+        <strong>Note:</strong> it looks the part, but won't do anything.
+    </p>
+
+    <form>
+        <p>
+            Name:
+        </p>
+        <input id="name" type="text" placeholder="Your name" />
+        <p>Comments:</p>
+        <textarea id="comments" placeholder="Your comments" rows="10"></textarea>
+        <p>Are you:</p>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">male</label><br><br>
+        <input type="radio" id="female" name="gender" value="femal">
+        <label for="female">female</label><br><br>
+
+        <button id="btn">Submit Query</button>
+
+    </form>
+</body>
+<script src="index.js"></script>
+
+</html>
