@@ -15,6 +15,7 @@ body{
 }  
 .header{
     background-color: #25313F;
+    position: relative;
 }
 
 .header_content{
@@ -31,6 +32,23 @@ body{
     justify-content: end;
     color: #3FD28B;
     align-items: center;
+}
+
+.header_action_selected{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+
+}
+
+.selected_underline{
+
+    position: absolute;
+    bottom: 0;
+    height: 5px;
+    width: 100px;
+    background-color: white;
 }
 
 .header_actions>div{
@@ -361,6 +379,10 @@ body{
   }
 
   .header_action{
+    display: none;
+  }
+
+  .header_action_selected{
     display: none;
   }
 
