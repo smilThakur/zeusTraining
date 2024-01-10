@@ -1,0 +1,47 @@
+@import './colors';
+.dropdown{
+
+    display: flex;
+    align-items: center;
+    color: black;
+    font-size: 16px;
+
+}
+
+.drop_icon{
+    margin-left: 55px;
+}
+
+.dropbtn {
+    background-color: $tertiary_green;
+    color: white;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown_hr{
+    background-color: #000000;
+    opacity: 0.5;
+    width: 100%;
+}

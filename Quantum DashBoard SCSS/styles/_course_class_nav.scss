@@ -1,0 +1,17 @@
+@import './colors';
+.course_class_nav{
+    background-color: $secondary_green;
+    border-radius: 2px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.course_class_nav_button{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+.course_class_nav_button > img{
+    margin-right: 10px;
+    width: 35px;
+}

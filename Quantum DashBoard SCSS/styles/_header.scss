@@ -1,0 +1,63 @@
+@import "./colors";
+
+.header{
+    background-color: $header_primary;
+    position: relative;
+}
+
+.header_content{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+
+
+.header_actions{
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    color: $primary_green;
+    align-items: center;
+}
+
+.header_action_selected{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+
+}
+
+.selected_underline{
+
+    position: absolute;
+    bottom: 0;
+    height: 5px;
+    width: 100px;
+    background-color: white;
+}
+
+.header_actions>div{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.collapse_toggle{
+    display: none;
+}
+
+.profile_pic{
+    width: 30px;
+    height: 30px;
+    border: 2px solid $primary_green;
+    object-fit: contain;
+    border-radius: 100%;
+}
+
+.blue_strip{
+    height: 5px;
+    background-color: $primary_blue;
+    width: 100%;
+}
+

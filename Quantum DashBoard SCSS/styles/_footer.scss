@@ -1,0 +1,51 @@
+.footer_nav{
+    background-color: #EEEEEE;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.footer_nav > a {
+    text-decoration: none;
+    color: #1F7A54;
+    font-size: 14px;
+
+}
+
+.nav_link_divider{
+    height: 18px;
+    width: 1px;
+    background-color: #000000;
+    opacity: 0.12;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.trademark{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    padding: 10px;
+    background-color: #E0E1E1;
+}
+
+
+.trademark_text{
+    margin-right: 5px;
+    margin-left: 5px;
+    color: #616161;
+}
+
+.trademark_text_bold{
+    font-weight: bold;
+    margin-left: 2px;
+    margin-right: 2px;
+
+}
+
+.trademark_text_bold > a{
+    text-decoration: none;
+    color: #616161;
+
+}

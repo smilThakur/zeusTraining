@@ -1,0 +1,127 @@
+@import './colors';
+.course_card_grid{
+    margin-top: 16px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 25px;
+    
+}
+
+
+.course_card{
+    
+    background-color: white;
+    border-radius: 2px;
+    padding-bottom: 20px;
+    position: relative;
+
+}
+
+.expired{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: $primary_red;
+    color: $secondary_red;
+    font-size: 10px;
+    padding: 2px;
+    border-radius: 2px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.course_card_header{
+    display: flex;
+    margin: 25px;
+}
+.course_card_header > img{
+    width: 132px;
+    height: 157px;
+    margin-right: 16px;
+    border-radius: 2px;
+}
+
+.card_header_content{
+    width: 100%;
+}
+
+.card_title{
+    font-size: 16px;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.subject_grade{
+    display: flex;
+    color: #666666;
+    align-items: center;
+    font-size: 12px;
+}
+
+
+.course_content_container{
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.course_content{
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+
+}
+
+.course_content_no{
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.course_material{
+    color: #666666;
+    margin-right: 6px;
+}
+
+.grade > span{
+    color: #1F7A54;
+}
+
+.sub_divide{
+    height: 12px;
+    width: 1px;
+    background-color: #000000;
+    opacity: 0.12;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.class_stats{
+    display: flex;
+    font-size: 12px;
+    color: #666666;
+    margin-top: 9px;
+}
+
+.card_divider{
+    background-color: #000000;
+    opacity: 0.2;
+    margin-bottom: 20px;
+    margin-left: 25px;
+    margin-right: 25px;
+    
+}
+
+
+.card_footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.card_footer_button{
+    width: 25px;
+}

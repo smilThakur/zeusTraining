@@ -1,0 +1,55 @@
+@import './header';
+@import './font';
+@import './body';
+@import './course_class_nav';
+@import './course_filter';
+@import './dropdown';
+@import './course_card';
+@import './footer';
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.content_divider{
+    background-color: #000000;
+    opacity: 0.5;
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  
+
+    .course_card_grid{
+      grid-template-columns: 1fr;
+    }
+  
+    .header_action{
+      display: none;
+    }
+  
+    .header_action_selected{
+      display: none;
+    }
+  
+    .collapse_toggle{
+      display:block;
+    }
+    
+    
+  .trademark{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      font-size: 12px;
+      padding: 10px;
+      background-color: #E0E1E1;
+  }
+  
+  .trademark .nav_link_divider {
+      display: none;
+  }
+    
+  }
