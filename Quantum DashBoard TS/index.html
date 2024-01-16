@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantum Dashboard</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <!-- header -->
+    <div class="header">
+        <div class="header_content">
+
+            <img class="header_icon" src="assets/icons/header_logo.svg" alt="" srcset="">
+
+            <div class="header_actions">
+
+                <div class="header_action_selected">
+                    DASHBOARD
+                    <div class="selected_underline">
+
+                    </div>
+                </div>
+                <div class="header_action">CONTENT</div>
+                <div class="header_action">USERS</div>
+                <div class="header_action">REPORTS</div>
+                <div class="header_action">ADMIN</div>
+                <div class="header_action_alert">
+                    <div id="alert_btn"></div>
+                    <div class="alerts_container" id="alerts_container">
+
+                        <div class="alert_content" id="alert_content">
+
+                            <!-- content loading from js -->
+
+                        </div>
+                        <div class="show_all_alert_btn">
+                            SHOW ALL
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+
+                <div class="header_action_announcement">
+                    <div id="announcements_btn"></div>
+
+                    <div class="announcements_container" id="announcements_container">
+                        <div class="announcements_content" id="announcements_content">
+                            <!-- content loaded via js -->
+                        </div>
+                        <div class="show_all_announcement_btn">
+                            <div class="show_all_btn">
+                                SHOW ALL
+                            </div>
+                            <div class="divider"></div>
+                            <div class="create_new_btn">
+                                CREATE NEW
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="header_action_profile"><img class="profile_pic" src="assets/images//rgj.jpg" alt="" srcset="">
+            </div>
+
+            <div class="collapse_toggle">
+                <img id="collapse_btn" src="assets/icons/hamburger.svg" alt="">
+                <div class="collapse_nav_container" id="collapse_nav_container">
+                    <div class="nav_button">
+                        DASHBOARD
+                    </div>
+                    <div class="nav_button_uncollapsed">
+                        <div class="nav_button_uncollapsed_title">
+                            CONTENT
+                            <img src="assets/icons/arrowup.png" alt="">
+                        </div>
+                        <div class="nav_button_contents">
+                            <div class="nav_button_content">
+                                COURSE CATALOG
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="nav_button_collapsed">
+                        USERS
+                        <img width="12px" src="assets/icons/arrowdown.png" alt="">
+                    </div>
+                    <div class="nav_button_collapsed">
+                        REPORTS
+                        <img width="12px" src="assets/icons/arrowdown.png" alt="">
+                    </div>
+                    <div class="nav_button_collapsed">
+                        ADMIN
+                        <img width="12px" src="assets/icons/arrowdown.png" alt="">
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <div class="blue_strip"></div>
+    </div>
+
+
+
+    <!-- body -->
+
+
+
+    <div class="body_content">
+
+
+        <div class="course_class_nav">
+            <div class="course_class_nav_button">
+                <img src="assets/icons/courses.svg" alt="">
+                <div class="course_stat">4</div>
+                Courses
+            </div>
+            <div class="course_class_nav_button">
+                <img src="assets/icons/classes.svg" alt="">
+                <div class="course_stat">4</div>
+                Classes
+            </div>
+
+        </div>
+
+
+
+        <div class="course_filter_container">
+
+            <div class="course_count">
+                showing 4 of 4 course
+            </div>
+
+            <div class="sort_course">
+                <div class="sort_label">
+                    sort By:
+                </div>
+                <div class="dropdown_sort">
+                    <div class="dropdown">
+                        <div>
+                            Course Name
+                            <hr class="dropdown_hr">
+                        </div>
+                        <img class="drop_icon" src="assets/icons/arrow-down.svg" alt="">
+                        <div class="dropdown-content">
+                            <a href="#">Item 1</a>
+                            <a href="#">Item 2</a>
+                            <a href="#">Item 3</a>
+                        </div>
+                    </div>
+
+                </div>
+                <img class="sort_icon" src="assets/icons/sort.svg" alt="">
+            </div>
+
+        </div>
+
+        <hr class="content_divider">
+
+
+        <div class="course_card_grid" id="course_card_grid">
+
+            <!-- content loaded via js -->
+
+        </div>
+
+
+    </div>
+
+
+    <!-- footer -->
+
+    <div class="footer_container">
+        <div class="footer_nav">
+            <a href="">About</a>
+            <div class="nav_link_divider"></div>
+            <a href="">Contact Us</a>
+        </div>
+        <div class="trademark">
+            <img src="assets/icons/logo used in footer.svg" alt="">
+            <div class="nav_link_divider"></div>
+            <div class="trademark_text">copyright © 2020-2021</div>
+            <div class="trademark_text_bold"><a href="https://www.zeuslearning.com/" target="_blank">
+                    Zeus System Pvt. Ltd.
+                </a></div>
+            <div class="trademark_text">All rights reserved</div>
+        </div>
+    </div>
+
+
+</body>
+
+<script src="index.ts"></script>
+
+</html>
