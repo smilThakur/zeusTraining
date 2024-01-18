@@ -34,12 +34,15 @@
     display: flex;
     margin: 25px;
 }
-.course_card_header > img{
-    width: 132px;
-    height: 157px;
-    margin-right: 16px;
-    border-radius: 2px;
-}
+.course_card_header {
+    > img {
+      width: 132px;
+      height: 157px;
+      margin-right: 16px;
+      border-radius: 2px;
+    }
+  }
+  
 
 .card_header_content{
     width: 100%;
@@ -85,8 +88,10 @@
     margin-right: 6px;
 }
 
-.grade > span{
+.grade{
+    > span{
     color: #1F7A54;
+    }
 }
 
 .sub_divide{

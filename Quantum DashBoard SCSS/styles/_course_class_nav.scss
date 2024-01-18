@@ -11,7 +11,9 @@
     align-items: center;
     padding: 20px;
 }
-.course_class_nav_button > img{
+.course_class_nav_button{
+    > img{
     margin-right: 10px;
     width: 35px;
+    }
 }

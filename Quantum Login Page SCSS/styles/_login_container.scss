@@ -35,10 +35,12 @@
     align-items: center;
 }
 
-.radio_button_container > div{
+.radio_button_container {
+    > div{
     display: flex;
     align-items: center;
     margin-right: 40px;
+    }
 }
 
 
@@ -54,9 +56,12 @@
     margin: 5px;
 }
 
-.radio_button:checked {
-    background-image: url("../assets/icons/radio-button-on.svg");
-}
+.radio_button {
+    &:checked {
+      background-image: url("../assets/icons/radio-button-on.svg");
+    }
+  }
+  
 
 .radio_label{
     font-size: 16px;
@@ -68,10 +73,13 @@
     border: none ;
 }
 
-.text_input::placeholder{
-    font-size: 16px;
-    color: #666666;
-}
+.text_input {
+    &::placeholder {
+      font-size: 16px;
+      color: #666666;
+    }
+  }
+  
 
 .text_input_hr{
     background-color: #000000;
@@ -93,9 +101,12 @@
     align-items: end;
 }
 
-.forget_pass > img {
-    cursor: pointer;
-}
+.forget_pass {
+    > img {
+      cursor: pointer;
+    }
+  }
+  
 
 .remember_container{
     display: flex;
@@ -112,8 +123,10 @@
     background-size: cover;
 }
 
-.checkbox:checked{
-    background-image: url("../assets/icons/checkbox-checked.svg");
-}
-
+.checkbox {
+    &:checked {
+      background-image: url("../assets/icons/checkbox-checked.svg");
+    }
+  }
+  
 

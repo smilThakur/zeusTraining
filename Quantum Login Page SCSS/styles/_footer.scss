@@ -5,10 +5,12 @@
     padding-bottom: 10px;
 }
 
-.footer_nav > a {
+.footer_nav  {
+    >a{
     text-decoration: none;
     color: #1F7A54;
     font-size: 14px;
+    }
 
 }
 
@@ -44,8 +46,10 @@
 
 }
 
-.trademark_text_bold > a{
+.trademark_text_bold {
+    > a{
     text-decoration: none;
     color: #616161;
+    }
 
 }

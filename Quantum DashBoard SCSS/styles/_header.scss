@@ -38,9 +38,12 @@
     background-color: white;
 }
 
-.header_actions>div{
+.header_actions{
+
+    >div{
     margin-left: 15px;
     margin-right: 15px;
+    }
 }
 
 .collapse_toggle{
