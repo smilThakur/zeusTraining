@@ -70,6 +70,13 @@ body{
     color: black;
 }
 
+.icon_retweet{
+    height: 20px;
+    margin-right: 14px;
+    background-color: white;
+    color: black;
+}
+
 .stats{
     margin-right: 24px;
     background-color: white;
