@@ -1,0 +1,51 @@
+[
+    {
+        "user": "Wilson Kumar",
+        "checked": true,
+        "content": "No classes will be held on 21st Nov",
+        "timestamp": "15-Sep-2018 at 07:21 pm",
+        "files": 2,
+        "sub_content": null
+    },
+    {
+        "user": "Samson White",
+        "checked": false,
+        "content": "Guest lecture on Geometry on 20th September",
+        "timestamp": "15-sep-2018 at 07:21 pm",
+        "files": 2,
+        "sub_content": null
+    },
+    {
+        "user": "Wilson Kumar",
+        "checked": true,
+        "content": "Additional course materials available on request",
+        "timestamp": "15-Sept-2018 at 07:21 pm",
+        "files": null,
+        "sub_content": {
+            "title": "Course: ",
+            "content": "Mathematics 101"
+        }
+    },
+    {
+        "user": "Wilson Kumar",
+        "checked": false,
+        "content": "No classes will be held on 25th Dec",
+        "timestamp": "13-Sep-2018 at 01:15 pm",
+        "files": 4,
+        "sub_content": {
+            "title": "Class:",
+            "content": "Basics of Algebra"
+        }
+    },
+    {
+        "user": "Wilson Kumar",
+        "checked": false,
+        "content": "Additional course materials available on request",
+        "timestamp": "15-Sep-2018 at 07:21 pm",
+        "files": 4,
+        "sub_content": {
+            "title": "Course: ",
+            "content": "Mathematics 101"
+        }
+    }
+]
