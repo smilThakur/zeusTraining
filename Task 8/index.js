@@ -55,7 +55,7 @@ const setTodos = () => {
                 `
     <div class="todo" id=${todo.id}>
     <div class="hint">
-        press to checkmark
+    Completed
     </div>
     <div class="todo_title">
         ${todo.title}
@@ -94,15 +94,19 @@ const toggleTodos = (todo, todoBtn, todo_name) => {
 
 addBtn.addEventListener("click", () => {
 
-    const timestamp = Date.now();
-    const dateObject = new Date(timestamp);
+    if (userInput.value === "") {
+        alert("add title to your todo")
+    }
+    else {
+        const timestamp = Date.now();
+        const dateObject = new Date(timestamp);
 
-    const options = { day: '2-digit', month: '2-digit', year: 'numeric' };
-    const formattedDate = new Intl.DateTimeFormat('en-GB', options).format(dateObject);
+        const options = { day: '2-digit', month: '2-digit', year: 'numeric' };
+        const formattedDate = new Intl.DateTimeFormat('en-GB', options).format(dateObject);
 
 
 
-    presentContainer.innerHTML += `
+        presentContainer.innerHTML += `
     <div class="todo" id=${todos.length + 1}>
     <div class="hint">
         press to checkmark
@@ -116,19 +120,20 @@ addBtn.addEventListener("click", () => {
 </div>`
 
 
-    todos.push({
-        id: todos.length + 1,
-        title: userInput.value,
-        checked: false,
-        date: formattedDate
-    })
+        todos.push({
+            id: todos.length + 1,
+            title: userInput.value,
+            checked: false,
+            date: formattedDate
+        })
 
 
-    saveTodos(todos)
+        saveTodos(todos)
 
 
-    userInput.value = ""
+        userInput.value = ""
 
+    }
 })
 
 
