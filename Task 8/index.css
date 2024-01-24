@@ -1,0 +1,159 @@
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+
+}
+
+.content{
+    margin: 10px 15px;
+}
+
+.todos{
+    border-radius: 5px;
+}
+
+.past_todos{
+    background-color: #176B87;
+    width: 100%;
+    overflow: scroll;
+    height: 0px;
+}
+
+.yesterday_todos{
+    background-color: #86B6F6;
+    width: 100%;
+    overflow: scroll;
+    height: 0px;
+
+
+}
+
+
+.present_todos{
+    background-color: #B4D4FF;
+    width: 100%;
+    overflow: scroll;
+
+
+}
+
+.completed_todos{
+    background-color: #EEF5FF;
+    width: 100%;
+    overflow: scroll;
+    height: 0px;
+
+
+
+}
+
+.todo_container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap: 5px;
+
+}
+
+.todo{
+    background-color: #3D3B40;
+    padding: 15px;
+    color: white;
+    border-radius: 5px;
+    
+}
+
+.hint{
+    font-size: 12px;
+    color: gray;
+    margin-bottom: 5px;
+}
+
+.todo_title{
+    font-weight: bold;
+    font-size: 16px;
+    width: 200px;
+    word-wrap: break-word;
+}
+
+.date_created{
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.drop_btn{
+    padding: 15px;
+    border: none;
+    background-color: #F1EFEF;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+
+  
+}
+
+.input_user{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.todo_input{
+    padding: 15px;
+    border: none;
+    box-shadow: 2px 2px 5px gray;
+}
+
+.add_todo{
+    width: 50px;
+    height: 50px;
+    
+    margin: 5px;
+    background-image: url("assets/add.png");
+    background-size: contain;
+}
+
+.safe_area{
+    height: 100px;
+    width: 100%;
+}
+
+
+@keyframes drop_animation{
+    0%{
+        height:0px;
+    }
+    100%{
+        height: 500px;
+    }
+}
+
+@keyframes pull_animation{
+    0%{
+        height: 500px;
+
+    }
+    100%{
+        height: 0px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+   
+    .todo_container{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 5px;
+    
+    }
+  }

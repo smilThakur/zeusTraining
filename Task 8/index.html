@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <h1>Your Todos</h1>
+
+
+    <div class="container">
+        <div class="present_todos todos" id="present_todos">
+            <div class="content">
+                <h2>Present Todos</h2>
+                <div class="todo_container" id="present_container">
+
+                </div>
+            </div>
+        </div>
+        <button class="drop_btn" id="present_btn">show less</button>
+    </div>
+    <div class="container">
+        <div class="completed_todos todos" id="completed_todos">
+            <div class="content">
+                <h2>Completed Todos</h2>
+                <div class="todo_container" id="completed_container">
+
+                </div>
+            </div>
+        </div>
+        <button class="drop_btn" id="completed_btn">Show Completed Todos</button>
+    </div>
+    <div class="safe_area"></div>
+
+    <div class="input_user">
+        <input class="todo_input" type="text" name="" id="user_input">
+        <div class="add_todo" id="add_todo"></div>
+    </div>
+
+</body>
+
+<script src="index.js"></script>
+
+</html>
