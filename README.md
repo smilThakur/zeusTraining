@@ -19,5 +19,9 @@ task 6
 Quantum Dashboard integrated with JSON data and java script
 also wrote the js into type-script for practice
 
+task 7
+Quantum Database using SQL workbench
+please read the readme file inside the Quantum Database folder
+
 Task 8
 Simple Todo to learn about DOM manipulation
