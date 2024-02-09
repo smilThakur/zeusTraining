@@ -1,0 +1,23 @@
+.footer_container {
+  height: 50px;
+  .footer_nav {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+
+    a {
+      text-decoration: none;
+      color: #1f7a54;
+      font-size: 14px;
+    }
+
+    .nav_link_divider {
+      height: 18px;
+      width: 1px;
+      background-color: #000000;
+      opacity: 0.12;
+      margin-right: 10px;
+      margin-left: 10px;
+    }
+  }
+}

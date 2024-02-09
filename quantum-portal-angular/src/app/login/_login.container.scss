@@ -1,0 +1,110 @@
+.login_container {
+  background-color: #ffffff;
+  padding: 20px;
+  border-top: 5px solid #3ac7ec;
+  border-radius: 2px;
+  width: 430px;
+  font-weight: 500;
+
+  .title_container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .login_content {
+    margin-top: 20px;
+    margin-right: 35px;
+    margin-left: 35px;
+
+    .auth_container {
+      .email_auth_container {
+        margin-left: 3px;
+
+        .text_input {
+          margin-top: 35px;
+          border: none;
+
+          &:focus {
+            border: none;
+            outline: none;
+          }
+
+          &::placeholder {
+            font-size: 16px;
+            color: #666666;
+          }
+        }
+
+        .text_input_hr {
+          background-color: #000000;
+          opacity: 0.12;
+          margin-top: 2px;
+        }
+
+        .forget_container {
+          color: #1f7a54;
+          text-align: end;
+          text-transform: uppercase;
+          font-size: 14px;
+          cursor: pointer;
+        }
+
+        .forget_pass {
+          display: flex;
+          justify-content: space-between;
+          align-items: end;
+        }
+
+        .forget_pass {
+          img {
+            cursor: pointer;
+          }
+        }
+      }
+
+      .remember_container {
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+
+        .checkbox {
+          cursor: pointer;
+          appearance: none;
+          background-image: url("../../assets/icons/checkbox-unchecked.svg");
+          height: 20px;
+          width: 20px;
+          background-size: cover;
+
+          &:checked {
+            background-image: url("../../assets/icons/checkbox-checked.svg");
+          }
+        }
+      }
+
+      .not_register_container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 25px;
+
+        div {
+          font-size: 12px;
+          font-weight: 500;
+        }
+        a {
+          margin-top: 5px;
+          color: #1f7a54;
+          font-size: 14px;
+          font-weight: 500;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

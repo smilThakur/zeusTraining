@@ -1,0 +1,60 @@
+<progressbar [progress]="0"></progressbar>
+
+<div class="personal_info_container">
+
+    <div class="personal_info_content">
+        <div class="personal_details">
+            <div class="input_container">
+                <signup-input title="First Name" placeholder="First Name"></signup-input>
+            </div>
+            <div class="input_container">
+                <signup-input title="Last Name" placeholder="Last Name"></signup-input>
+            </div>
+            <div class="input_container">
+                <signup-input title="Email" placeholder="Email" type="email"></signup-input>
+            </div>
+            <div class="input_container">
+                <phone-input></phone-input>
+            </div>
+            <div class="input_container">
+                <div class="upload_resume_container">
+                    <img src="assets/icons/upload.svg" alt="">
+                    <span>upload resume</span>
+                </div>
+            </div>
+            <div class="input_container">
+                <signup-input title="Enter Portfolio URL(if any)" [required]="false" placeholder="URL"
+                    type="url"></signup-input>
+            </div>
+            <div class="input_container">
+                <div class="title">
+                    preferred job roles*
+                </div>
+                <checkbox-input label="Instructional Designer" [value]="0"></checkbox-input>
+                <checkbox-input label="Software Engineer" [value]="1"></checkbox-input>
+                <checkbox-input label="Software Quality Engineer" [value]="2"></checkbox-input>
+            </div>
+            <div class="input_container">
+                <signup-input
+                    title="If You Are registering Via A referral, Please Mention Full Name Of The Employee Who Referred You"
+                    [required]="false" placeholder="name" type="url"></signup-input>
+            </div>
+            <div class="input_container">
+                <checkbox-input label="Send me job related updates via email" [value]="0"></checkbox-input>
+
+            </div>
+        </div>
+        <div class="display_photo_container">
+            <div class="display_photo">
+                <div>
+                    <img src="assets/icons/user.png" alt="">
+                    UPLOAD DISPLAY PICTURE
+                    <span>Max. image size: 5 MB</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="next_btn_container">
+        <button (click)="nextBtnClicked()">next</button>
+    </div>
+</div>

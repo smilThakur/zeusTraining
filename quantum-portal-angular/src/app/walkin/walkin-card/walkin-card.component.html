@@ -1,0 +1,61 @@
+<div class="walkin_card">
+    <div *ngIf="expire!==''" class="expire_container">
+        expire in {{expire}} days
+    </div>
+    <div class="content">
+        <div class="title">
+            {{title}}
+        </div>
+        <div class="date_venue_container">
+            <div class="sub_title">
+                Date & Time:
+            </div>
+            <div class="date_time">
+                <div class="date">
+                    {{start_end_date[0]}} to {{start_end_date[1]}}
+                </div>
+                <div class="v_divider"></div>
+                <div class="venue">
+                    <img src="assets/icons/location_gray.svg" alt="">
+                    {{venue}}
+                </div>
+            </div>
+        </div>
+        <div class="h_divider"></div>
+        <div class="role_container">
+            <div class="sub_title">
+                Job Roles :
+            </div>
+            <div class="roles">
+                <div *ngIf="roles[0]" class="role">
+                    <div class="role_icon">
+                        <img src="assets/icons/ID.svg" alt="">
+                    </div>
+                    Instructional Designer
+                </div>
+                <div *ngIf="roles[1]" class="v_divider"></div>
+                <div *ngIf="roles[1]" class="role">
+                    <div class="role_icon">
+                        <img src="assets/icons/ID.svg" alt="">
+                    </div>
+                    software engineer
+                </div>
+                <div *ngIf="roles[2]" class="v_divider"></div>
+                <div *ngIf="roles[2]" class="role">
+                    <div class="role_icon">
+                        <img src="assets/icons/SQE.svg" alt="">
+                    </div>
+                    software quality engineer
+                </div>
+            </div>
+            <div *ngIf="tag !== ''" class="tags">
+                <div class="tag">
+                    {{tag}}
+                </div>
+            </div>
+        </div>
+        <div class="btn_container">
+            <button (click)="dummyNavigate()" class="details_btn">view more details</button>
+        </div>
+    </div>
+</div>

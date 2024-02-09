@@ -1,0 +1,189 @@
+<progressbar [progress]="1"></progressbar>
+<div class="qualification-info-container">
+    <div class="content">
+        <div class="title_container">
+            <div class="title">
+                Education Qualification
+            </div>
+            <div (click)="collapse_drop_edu()" class="collapse_btn_container">
+                <img src="assets/icons/expand.svg" alt="">
+            </div>
+
+        </div>
+        <div id="edu_inputs" class="user_inputs">
+            <div class="layer1">
+                <div class="input_container">
+                    <signup-input title="Aggregated Percentage" placeholder="percentage" type="number"></signup-input>
+                </div>
+                <div class="input_container">
+                    <signup-input title="Year of Passing" placeholder="year" type="date"></signup-input>
+                </div>
+            </div>
+            <div class="layer2">
+                <div class="input_container">
+                    <app-dropdown title="Qualification" [options]="['Bachlore in Technology (B.Tech)']"></app-dropdown>
+                </div>
+                <div class="input_container">
+                    <app-dropdown title="Stream" [options]="['Information Technology']"></app-dropdown>
+                </div>
+                <div class="input_container">
+                    <app-dropdown title="College" [options]="['Adani University', 'Other']"></app-dropdown>
+                </div>
+                <div class="input_container">
+                    <signup-input title="If Other, Please Enter Your College Name" placeholder="college name"
+                        type="text"></signup-input>
+                </div>
+
+            </div>
+            <div class="layer3">
+                <signup-input title="Where is Your College Located?" placeholder="Location" type="text"></signup-input>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="content">
+        <div class="title_container">
+            <div class="title">
+                Professional Qualification
+            </div>
+            <div (click)="collapse_drop_prof()" class="collapse_btn_container">
+                <img src="assets/icons/expand.svg" alt="">
+            </div>
+
+        </div>
+        <div id="prof_inputs" class="prof_inputs">
+            <div class="title">
+                Applicant Type*
+            </div>
+            <div class="radio_btns_container">
+                <radio-btn label="Fresher" id="1" name="appli_type" (value)="handleselect($event)"></radio-btn>
+                <radio-btn label="Experienced" id="2" name="appli_type" (value)="handleselect($event)"></radio-btn>
+            </div>
+        </div>
+    </div>
+
+    <div id="sub_prof_inputs" class="content">
+
+        <div id="fresher_content" *ngIf="selectedDiv ==='Fresher'" class="fresher_content">
+            <div class="fimiliar_tec">
+                <div class="title">select all the technologies you are fimiliar in</div>
+                <div class="check_btn_container">
+                    <checkbox-input label="Javascript"></checkbox-input>
+                    <checkbox-input label="Angular JS"></checkbox-input>
+                    <checkbox-input label="React"></checkbox-input>
+                    <checkbox-input label="Node JS"></checkbox-input>
+                    <checkbox-input label="Others"></checkbox-input>
+                </div>
+            </div>
+
+            <div class="text_input">
+                <signup-input title="If Other, Please Mention" placeholder="fimiliar tech" type="text"></signup-input>
+            </div>
+            <div class="zeus_test">
+                <div class="title">
+                    Have You Appeared For Any Test By Zeus Learning In The Past 12 Months?*
+                </div>
+                <div class="radio_btns_container">
+
+                    <radio-btn label="Yes" id="3" name="zues_test"></radio-btn>
+                    <radio-btn label="No" id="4" name="zues_test"></radio-btn>
+                </div>
+            </div>
+            <div class="text_input">
+                <signup-input title="If Yes, Which Role Did You Apply For?" placeholder="Role"
+                    type="text"></signup-input>
+            </div>
+        </div>
+        <div *ngIf="selectedDiv === 'Experienced'" class="experienced_content">
+            <div class="layer1">
+                <div class="input_container">
+                    <signup-input title="Years Of Expeience" placeholder="years" type="number"></signup-input>
+                </div>
+                <div class="input_container">
+                    <signup-input title="Current CTC (In Rupees)" placeholder="INR" type="number"></signup-input>
+                </div>
+                <div class="input_container">
+                    <signup-input title="Expected CTC (In Rupees)" placeholder="years" type="number"></signup-input>
+                </div>
+            </div>
+
+            <div class="layer2">
+                <div class="fimiliar_tec">
+                    <div class="title">select all the technologies you are fimiliar in</div>
+                    <div class="check_btn_container">
+                        <checkbox-input label="Javascript"></checkbox-input>
+                        <checkbox-input label="Angular JS"></checkbox-input>
+                        <checkbox-input label="React"></checkbox-input>
+                        <checkbox-input label="Node JS"></checkbox-input>
+                        <checkbox-input label="Others"></checkbox-input>
+                    </div>
+                    <div class="input_container">
+                        <signup-input title="If Other, Please Mention" placeholder="fimiliar tech"
+                            type="text"></signup-input>
+                    </div>
+                </div>
+
+                <div class="fimiliar_tec">
+                    <div class="title">select all the technologies you are Expertise in</div>
+                    <div class="check_btn_container">
+                        <checkbox-input label="Javascript"></checkbox-input>
+                        <checkbox-input label="Angular JS"></checkbox-input>
+                        <checkbox-input label="React"></checkbox-input>
+                        <checkbox-input label="Node JS"></checkbox-input>
+                        <checkbox-input label="Others"></checkbox-input>
+                    </div>
+                    <div class="input_container">
+                        <signup-input title="If Other, Please Mention" placeholder="expertise tech"
+                            type="text"></signup-input>
+                    </div>
+                </div>
+            </div>
+            <div class="layer3">
+                <div class="title">
+                    Are you currently on notice period?*
+                </div>
+                <div class="radio_btns_container">
+
+                    <radio-btn label="Yes" id="5" name="notice"></radio-btn>
+                    <radio-btn label="No" id="6" name="notice"></radio-btn>
+                </div>
+                <div class="notice_inputs">
+                    <div class="input_container">
+                        <signup-input title="If Yes, When Will Your Notice Period End?" placeholder="Date"
+                            type="date"></signup-input>
+                    </div>
+                    <div class="input_container">
+                        <signup-input title="How Long Is Your Notice Period?(Mention In Months)" placeholder="month(s)"
+                            type="text"></signup-input>
+                    </div>
+                </div>
+            </div>
+            <div class="zeus_test">
+                <div class="title">
+                    Have You Appeared For Any Test By Zeus Learning In The Past 12 Months?*
+                </div>
+                <div class="radio_btns_container">
+
+                    <radio-btn label="Yes" id="3" name="zues_test"></radio-btn>
+                    <radio-btn label="No" id="4" name="zues_test"></radio-btn>
+                </div>
+                <div class="text_input">
+                    <signup-input title="If Yes, Which Role Did You Apply For?" placeholder="Role"
+                        type="text"></signup-input>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+    <div class="next_btn_container">
+        <button (click)="navigate()">next</button>
+    </div>
+</div>

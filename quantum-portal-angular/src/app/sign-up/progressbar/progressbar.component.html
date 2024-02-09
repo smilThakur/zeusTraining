@@ -1,0 +1,29 @@
+<div class="progress_container">
+    <div class="progress_title_container">
+        <div [ngClass]="{'progress_active':progress>=0}">
+            1
+        </div>
+        <div class="title">
+            Personal Information
+        </div>
+    </div>
+    <div class="progress_line"></div>
+    <div class="progress_title_container">
+        <div [ngClass]="{'progress_active':progress>=1,'progress_inactive':progress<1}">
+            2
+        </div>
+        <div class="title">
+            Qualifications
+        </div>
+    </div>
+    <div class="progress_line"></div>
+
+    <div class="progress_title_container">
+        <div [ngClass]="{'progress_active':progress>=2,'progress_inactive':progress<2}">
+            3
+        </div>
+        <div class="title">
+            Review and Proceed
+        </div>
+    </div>
+</div>

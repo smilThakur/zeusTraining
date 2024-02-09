@@ -1,0 +1,22 @@
+label {
+  color: #666666;
+  font-size: 12px;
+}
+input {
+  margin-top: 10px;
+  margin-right: 5px;
+  margin-left: 5px;
+  border: none;
+  border-bottom: 1px solid black;
+  font-size: 16px;
+
+  &:focus {
+    outline: none;
+  }
+}
+.code {
+  width: 25px;
+}
+.num {
+  width: 100px;
+}

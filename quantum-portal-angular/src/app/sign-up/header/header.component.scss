@@ -1,0 +1,35 @@
+.header_container {
+  .header {
+    background-color: #25313f;
+    width: 100%;
+    border-bottom: 3px solid #24a5d7;
+    .header_logo {
+      margin: 10px 10px 10px 25px;
+    }
+  }
+
+  .sub_header_container {
+    background-color: #3c4e62;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+
+    .back_btn {
+      justify-self: left;
+      align-self: center;
+      margin-left: 30px;
+    }
+
+    .title {
+      color: white;
+      text-align: center;
+      justify-self: center;
+      align-self: center;
+    }
+
+    .sub_header_btn_container {
+      display: flex;
+      justify-self: right;
+      align-self: center;
+    }
+  }
+}

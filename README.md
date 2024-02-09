@@ -25,3 +25,6 @@ please read the readme file inside the Quantum Database folder
 
 Task 8
 Simple Todo to learn about DOM manipulation
+
+Task 9
+create entire frontend for quantum portal using Angular (14)

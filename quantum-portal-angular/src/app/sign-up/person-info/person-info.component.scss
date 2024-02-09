@@ -1,0 +1,75 @@
+.personal_info_container {
+  background-color: #eeeeee;
+  width: 100%;
+
+  .personal_info_content {
+    background-color: white;
+    display: grid;
+    margin: 25px;
+    grid-template-columns: 1fr 1fr;
+    .personal_details {
+      margin: 25px;
+      .input_container {
+        margin-bottom: 40px;
+        .upload_resume_container {
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          img {
+            margin-right: 5px;
+          }
+          span {
+            text-transform: uppercase;
+            font-size: 14px;
+            color: #1f7a54;
+          }
+        }
+
+        .title {
+          color: #666666;
+          font-size: 12px;
+          text-transform: capitalize;
+        }
+      }
+    }
+    .display_photo_container {
+      .display_photo {
+        display: flex;
+        justify-content: end;
+        margin: 50px;
+        div {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          color: #1f7a54;
+          font-size: 12px;
+          img {
+            width: 120px;
+            margin-bottom: 20px;
+          }
+          span {
+            margin-top: 10px;
+            color: #757575;
+            font-size: 10px;
+          }
+        }
+      }
+    }
+  }
+  .next_btn_container {
+    display: flex;
+    justify-content: center;
+    background-color: #eeeeee;
+    padding-bottom: 20px;
+
+    button {
+      padding: 5px 20px;
+      border: none;
+      background-color: #3fd28b;
+      text-transform: uppercase;
+      box-shadow: 0px 3px 5px #0000003d;
+      border-radius: 2px;
+    }
+  }
+}

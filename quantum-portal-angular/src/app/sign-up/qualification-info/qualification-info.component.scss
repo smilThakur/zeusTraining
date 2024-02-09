@@ -1,0 +1,151 @@
+.qualification-info-container {
+  background-color: #eeeeee;
+  .content {
+    background-color: white;
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+    .title_container {
+      background-color: #dbefff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .title {
+        padding: 25px;
+      }
+      .collapse_btn_container {
+        cursor: pointer;
+        align-self: stretch;
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        border-left: 2px solid grey;
+      }
+    }
+    .user_inputs {
+      max-height: 500px;
+      transition: all 1s ease;
+      padding: 25px;
+      overflow: hidden;
+      .layer1 {
+        width: 180px;
+      }
+      .layer2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 25px;
+      }
+      .layer3 {
+        width: 190px;
+      }
+    }
+  }
+
+  .input_container {
+    margin-bottom: 40px;
+  }
+  .next_btn_container {
+    display: flex;
+    justify-content: center;
+    background-color: #eeeeee;
+    padding-bottom: 20px;
+
+    button {
+      padding: 5px 20px;
+      border: none;
+      background-color: #3fd28b;
+      text-transform: uppercase;
+      box-shadow: 0px 3px 5px #0000003d;
+      border-radius: 2px;
+    }
+  }
+}
+
+#prof_inputs {
+  max-height: 200px;
+  padding: 25px;
+  transition: all 1s ease;
+  overflow: hidden;
+  .title {
+    text-transform: capitalize;
+    font-size: 12px;
+    color: #666666;
+    margin-bottom: 15px;
+  }
+  .radio_btns_container {
+    display: flex;
+    align-items: center;
+    radio-btn {
+      margin-right: 25px;
+    }
+  }
+}
+
+#sub_prof_inputs {
+  margin-top: 10px !important;
+  margin-bottom: 25px;
+  overflow: hidden;
+  max-height: 1500px;
+
+  transition: all 1s ease;
+
+  .fresher_content {
+    margin: 25px;
+    .zeus_test {
+      margin-bottom: 20px;
+    }
+
+    .text_input {
+      width: 50%;
+      margin-bottom: 20px;
+    }
+
+    .check_btn_container {
+      margin-bottom: 20px;
+    }
+  }
+
+  .title {
+    text-transform: capitalize;
+    font-size: 12px;
+    color: #666666;
+    margin-bottom: 15px;
+  }
+
+  .radio_btns_container {
+    display: flex;
+    align-items: center;
+    radio-btn {
+      margin-right: 25px;
+    }
+  }
+
+  .experienced_content {
+    padding: 25px;
+    .layer1 {
+      width: 200px;
+    }
+    .layer2 {
+      .fimiliar_tec {
+        .input_container {
+          margin-top: 20px;
+          width: 50%;
+        }
+      }
+    }
+    .layer3 {
+      .notice_inputs {
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+      }
+    }
+    .zeus_test {
+      width: 50%;
+      .radio_btns_container {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

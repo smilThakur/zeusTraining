@@ -1,0 +1,128 @@
+.edit_container {
+  margin: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .title {
+    text-transform: capitalize;
+  }
+  .edit_icon {
+    color: #1f7a54;
+    display: flex;
+    align-items: center;
+    img {
+      margin-right: 10px;
+      letter-spacing: 0.4px;
+    }
+  }
+}
+
+.person_info_disp {
+  margin: 25px;
+  background-color: white;
+  padding: 25px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  .personal_infos {
+    .info {
+      margin-bottom: 40px;
+      .title {
+        color: #666666;
+        font-size: 12px;
+        text-transform: capitalize;
+        margin-bottom: 12px;
+      }
+      .content {
+        text-transform: capitalize;
+        margin-bottom: 16px;
+      }
+      .content_url {
+        margin-bottom: 16px;
+      }
+      .resume_uploaded {
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        color: #222222;
+        img {
+          margin-right: 8px;
+        }
+        .resume_url {
+          margin-left: 8px;
+          color: black;
+          font-size: 16px;
+        }
+      }
+      .send_updates {
+        display: flex;
+        align-items: center;
+        img {
+          margin-right: 8px;
+        }
+      }
+    }
+  }
+  .user_img {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    img {
+      width: 112px;
+      height: 112px;
+      object-fit: cover;
+      border-radius: 100%;
+    }
+  }
+}
+.container_title {
+  background-color: #dbefff;
+  text-transform: capitalize;
+  padding: 25px;
+}
+
+.infos {
+  padding: 25px;
+  .info {
+    margin-bottom: 40px;
+  }
+  .title {
+    color: #666666;
+    font-size: 12px;
+    text-transform: capitalize;
+    margin-bottom: 12px;
+  }
+  .content {
+    text-transform: capitalize;
+    margin-bottom: 16px;
+  }
+  .grid-2-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.info_container {
+  margin: 25px 25px 0px 25px;
+  background-color: white;
+}
+
+.sub_info_container {
+  margin: 10px 25px 25px 25px;
+  background-color: white;
+}
+
+.next_btn_container {
+  display: flex;
+  justify-content: center;
+  background-color: #eeeeee;
+  padding-bottom: 20px;
+
+  button {
+    padding: 5px 20px;
+    border: none;
+    background-color: #3fd28b;
+    text-transform: uppercase;
+    box-shadow: 0px 3px 5px #0000003d;
+    border-radius: 2px;
+  }
+}

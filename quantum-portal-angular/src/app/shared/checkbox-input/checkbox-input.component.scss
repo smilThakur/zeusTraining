@@ -1,0 +1,25 @@
+.radio_btn {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+
+  input {
+    height: 25px;
+    color: green;
+    appearance: none;
+    height: 24px;
+    width: 24px;
+    background-size: cover;
+    background-image: url("../../../assets/icons/check_box.svg");
+    &:checked {
+      height: 24px;
+      width: 24px;
+      background-size: cover;
+      background-image: url("../../../assets/icons/checked_box.svg");
+    }
+  }
+  label {
+    margin-left: 10px;
+    font-size: 16px;
+  }
+}

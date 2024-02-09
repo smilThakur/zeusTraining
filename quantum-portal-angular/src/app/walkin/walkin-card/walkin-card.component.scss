@@ -1,0 +1,140 @@
+.walkin_card {
+  position: relative;
+  box-shadow: 0px 4px 6px #0000003d;
+  background-color: white;
+  margin-bottom: 25px;
+  .content {
+    padding: 16px;
+    .title {
+      color: #1f7a54;
+      font-size: 18px;
+      text-transform: capitalize;
+    }
+    .date_time {
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      margin-top: 8px;
+      text-transform: capitalize;
+      .venue {
+        display: flex;
+        align-items: center;
+        font-size: 12px;
+        img {
+          width: 16px;
+        }
+      }
+    }
+    .roles {
+      margin-top: 10px;
+      display: flex;
+      align-items: center;
+      .role {
+        display: flex;
+        align-items: center;
+
+        .role_icon {
+          border: 1px solid black;
+          border-radius: 100%;
+          width: 24px;
+          height: 24px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-right: 8px;
+        }
+
+        font-size: 12px;
+        color: #1f7a54;
+        text-transform: capitalize;
+      }
+      .v_divider {
+        margin-right: 10px;
+      }
+    }
+  }
+  .expire_container {
+    position: absolute;
+    background-color: #ffe4e6;
+    color: #d10107;
+    font-size: 12px;
+    right: 10px;
+    top: -10px;
+    padding: 2px;
+    text-transform: capitalize;
+  }
+}
+
+.sub_title {
+  margin-top: 16px;
+  color: #666666;
+  font-size: 12px;
+  text-transform: capitalize;
+}
+.sub_content {
+  font-size: 14px;
+  margin-top: 16px;
+}
+
+.v_divider {
+  width: 2px;
+  background-color: gray;
+  opacity: 0.2;
+  height: 20px;
+  margin-left: 10px;
+  margin-right: 5px;
+}
+
+.h_divider {
+  height: 2px;
+  background-color: black;
+  opacity: 0.12;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.btn_container {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  .details_btn {
+    cursor: pointer;
+    background-color: #3fd28b;
+    border: none;
+    width: 200px;
+    height: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    box-shadow: 0px 3px 5px #0000003d;
+  }
+}
+
+.tags {
+  margin-top: 20px;
+}
+
+.tag {
+  background-color: #eedd6b;
+  width: fit-content;
+  font-size: 10px;
+  padding: 3px 5px;
+  border-radius: 20px;
+  text-transform: capitalize;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+
+  .roles {
+    flex-direction: column;
+    .v_divider {
+      display: none;
+    }
+    .role {
+      width: 100%;
+      margin-bottom: 14px;
+    }
+  }
+}
