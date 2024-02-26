@@ -1,0 +1,71 @@
+﻿<Properties StartupConfiguration="{B56D9FA7-4BAD-47A4-AEC0-CC42FFB68A87}|https">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches>
+    <Watch file="../../../Quantum-backend-apis/Helpers/JwtService.cs" line="17" column="7" endLine="17" endColumn="46" offsetX="-1" offsetY="-1" expression="temp" liveUpdate="False" />
+  </MonoDevelop.Ide.DebuggingService.PinnedWatches>
+  <MonoDevelop.Ide.ItemProperties.Quantum-backend-apis PreferredExecutionTarget="/Applications/Brave Browser.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Quantum-backend-apis/Controllers/WalkinController.cs">
+    <Files>
+      <File FileName="Quantum-backend-apis/Model/User.cs" Line="27" Column="1" />
+      <File FileName="Quantum-backend-apis/appsettings.json" />
+      <File FileName="Quantum-backend-apis/Program.cs" />
+      <File FileName="Quantum-backend-apis/Controllers/UserController.cs" Line="52" Column="1" />
+      <File FileName="Quantum-backend-apis/Data/APPDBContext.cs" Line="35" Column="41" />
+      <File FileName="Quantum-backend-apis/Enums/Enums.cs" Line="58" Column="11" />
+      <File FileName="Quantum-backend-apis/Model/ExpertiseTech.cs" />
+      <File FileName="Quantum-backend-apis/DTO/UserDTO.cs" />
+      <File FileName="Quantum-backend-apis/Model/FimiliarTech.cs" />
+      <File FileName="Quantum-backend-apis/Model/UserEducationQualification.cs" />
+      <File FileName="Quantum-backend-apis/DTO/EducationQualificationDTO.cs" />
+      <File FileName="Quantum-backend-apis/Model/UserZuesTestInfo.cs" />
+      <File FileName="Quantum-backend-apis/DTO/UserZuesTestInfoDTO.cs" />
+      <File FileName="Quantum-backend-apis/Model/UserPreferredJob.cs" />
+      <File FileName="Quantum-backend-apis/DTO/UserPreferredJobDTO.cs" />
+      <File FileName="Quantum-backend-apis/DTO/UserAppliedJobDTO.cs" />
+      <File FileName="Quantum-backend-apis/Controllers/WalkinController.cs" Line="161" Column="53" />
+      <File FileName="Quantum-backend-apis/Model/Roles.cs" />
+      <File FileName="Quantum-backend-apis/Helpers/PasswordHasher.cs" />
+      <File FileName="Quantum-backend-apis/Model/UserAuth.cs" />
+      <File FileName="Quantum-backend-apis/DTO/Emaildto.cs" />
+      <File FileName="Quantum-backend-apis/Helpers/JwtService.cs" Line="11" Column="40" />
+      <File FileName=".editorconfig" />
+      <File FileName="Quantum-backend-apis/Helpers/RefreshToken.cs" Line="8" Column="38" />
+      <File FileName="Quantum-backend-apis/Model/walkin.cs" Line="13" Column="36" />
+      <File FileName="Quantum-backend-apis/Model/WalkinJobRoleInfo.cs" Line="15" Column="1" />
+      <File FileName="Quantum-backend-apis/DTO/WalkinGlanceDTO.cs" Line="12" Column="45" />
+      <File FileName="Quantum-backend-apis/Controllers/DataController.cs" Line="130" Column="44" />
+      <File FileName="Quantum-backend-apis/Model/WalkinTimeSlots.cs" Line="9" Column="18" />
+      <File FileName="Quantum-backend-apis/Data/Repository.cs" Line="1" Column="1" />
+      <File FileName="Quantum-backend-apis/DTO/WalkinDTO.cs" Line="23" Column="1" />
+      <File FileName="Quantum-backend-apis/Model/WalkinApplicationProcess.cs" Line="7" Column="7" />
+      <File FileName="Quantum-backend-apis/DTO/ApplyJobDTO.cs" Line="7" Column="24" />
+      <File FileName="Quantum-backend-apis/Model/AppliedJob.cs" Line="10" Column="31" />
+      <File FileName="Quantum-backend-apis/DTO/CheckApplied.cs" Line="7" Column="31" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Quantum-backend-apis" expanded="True">
+            <Node name="Quantum-backend-apis" expanded="True">
+              <Node name="Controllers" expanded="True">
+                <Node name="WalkinController.cs" selected="True" />
+              </Node>
+              <Node name="Data" expanded="True" />
+              <Node name="DTO" expanded="True" />
+              <Node name="Enums" expanded="True" />
+              <Node name="Helpers" expanded="True" />
+              <Node name="Model" expanded="True" />
+              <Node name="Resources" expanded="True">
+                <Node name="Resumes" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+</Properties>

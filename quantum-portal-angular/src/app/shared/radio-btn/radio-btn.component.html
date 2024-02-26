@@ -1,7 +1,7 @@
 <div class="radio_btn">
 
 
-    <input type="radio" name="{{name}}" id="{{id}}" [value]="label" (click)="emitvalue(label)">
+    <input [checked]="checked" type="radio" name="{{name}}" id="{{id}}" [value]="label" (click)="emitvalue(label)">
     <label for="{{id}}">{{label}}</label>
 
 </div>

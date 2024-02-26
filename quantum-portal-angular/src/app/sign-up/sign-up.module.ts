@@ -6,6 +6,8 @@ import { PersonInfoComponent } from './person-info/person-info.component';
 import { QualificationInfoComponent } from './qualification-info/qualification-info.component';
 import { ReviewPageComponent } from './review-page/review-page.component';
 import { ProgressbarComponent } from './progressbar/progressbar.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CreatePasswordPageComponent } from './create-password-page/create-password-page.component';
 
 
 
@@ -15,12 +17,15 @@ import { ProgressbarComponent } from './progressbar/progressbar.component';
     PersonInfoComponent,
     QualificationInfoComponent,
     ReviewPageComponent,
-    ProgressbarComponent
+    ProgressbarComponent,
+    CreatePasswordPageComponent,
   ],
   imports: [
     CommonModule,
-    SharedModule
+    SharedModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
-  exports:[HeaderComponent,PersonInfoComponent,QualificationInfoComponent,ReviewPageComponent,ProgressbarComponent]
+  exports:[HeaderComponent,PersonInfoComponent,QualificationInfoComponent,ReviewPageComponent,ProgressbarComponent,CreatePasswordPageComponent]
 })
 export class SignUpModule { }

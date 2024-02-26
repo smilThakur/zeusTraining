@@ -10,33 +10,39 @@
                 <div class="title_container">
                     <div class="title">Log in</div>
                 </div>
-
                 <div class="auth_container">
-                    <div class="email_auth_container">
-                        <input class="text_input" type="text" placeholder="Email ID*" />
-                        <hr class="text_input_hr" />
-                        <div class="forget_container">Forget Username?</div>
+                    <form [formGroup]="loginForm" (ngSubmit)="submitForm()">
+                        <div class="email_auth_container">
+                            <input formControlName="email" class="text_input" type="text" placeholder="Email ID*" />
+                            <hr class="text_input_hr" />
+                            <div class="forget_container">Forget EmailID?</div>
 
-                        <div class="forget_pass">
-                            <input class="text_input" type="password" placeholder="Password*" />
-                            <img src="assets/icons/preview.svg" alt="" />
+                            <div class="forget_pass">
+                                <input id="pass" formControlName="password" class="text_input" type="password"
+                                    placeholder="Password*" />
+                                <img (click)="showPass()" src="assets/icons/preview.svg" alt="" />
+                            </div>
+                            <hr class="text_input_hr" />
+                            <div class="forget_container">Forget Password?</div>
                         </div>
-                        <hr class="text_input_hr" />
-                        <div class="forget_container">Forget Password?</div>
-                    </div>
 
-                    <div class="remember_container">
-                        <input class="checkbox" type="checkbox" name="" id="remember" />
-                        <label for="remember">Remember Me</label>
-                    </div>
+                        <div class="remember_container">
+                            <input formControlName="rememberMe" class="checkbox" type="checkbox" name=""
+                                id="remember" />
+                            <label for="remember">Remember Me</label>
+                        </div>
 
-                    <div class="btn_container">
-                        <button class="login-btn">LOG IN</button>
-                    </div>
-
+                        <div class="btn_container">
+                            <button [disabled]="!loginForm.valid" type="submit" class="login-btn">LOG IN</button>
+                        </div>
+                    </form>
                     <div class="not_register_container">
                         <div>Not registered yet?</div>
                         <a href="/signup/personalinfo"> CREATE AN ACCOUNT </a>
+                    </div>
+                    <div class="error">
+                        <p>Email: {{ loginForm.get('email')?.status }}</p>
+                        <p>Password: {{ loginForm.get('password')?.status }}</p>
                     </div>
                 </div>
             </div>

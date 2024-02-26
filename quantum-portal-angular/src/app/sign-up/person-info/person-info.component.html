@@ -1,60 +1,71 @@
+<signup-header [back]="cancel" [cancel]="cancel" [canCreate]="false"></signup-header>
+
 <progressbar [progress]="0"></progressbar>
 
 <div class="personal_info_container">
 
     <div class="personal_info_content">
         <div class="personal_details">
-            <div class="input_container">
-                <signup-input title="First Name" placeholder="First Name"></signup-input>
-            </div>
-            <div class="input_container">
-                <signup-input title="Last Name" placeholder="Last Name"></signup-input>
-            </div>
-            <div class="input_container">
-                <signup-input title="Email" placeholder="Email" type="email"></signup-input>
-            </div>
-            <div class="input_container">
-                <phone-input></phone-input>
-            </div>
-            <div class="input_container">
-                <div class="upload_resume_container">
-                    <img src="assets/icons/upload.svg" alt="">
-                    <span>upload resume</span>
+            <form>
+                <div class="input_container">
+                    <signup-input title="First Name" placeholder="First Name" [(value)]="firstName"></signup-input>
                 </div>
-            </div>
-            <div class="input_container">
-                <signup-input title="Enter Portfolio URL(if any)" [required]="false" placeholder="URL"
-                    type="url"></signup-input>
-            </div>
-            <div class="input_container">
-                <div class="title">
-                    preferred job roles*
+                <div class="input_container">
+                    <signup-input title="Last Name" placeholder="Last Name" [(value)]="lastName"></signup-input>
                 </div>
-                <checkbox-input label="Instructional Designer" [value]="0"></checkbox-input>
-                <checkbox-input label="Software Engineer" [value]="1"></checkbox-input>
-                <checkbox-input label="Software Quality Engineer" [value]="2"></checkbox-input>
-            </div>
-            <div class="input_container">
-                <signup-input
-                    title="If You Are registering Via A referral, Please Mention Full Name Of The Employee Who Referred You"
-                    [required]="false" placeholder="name" type="url"></signup-input>
-            </div>
-            <div class="input_container">
-                <checkbox-input label="Send me job related updates via email" [value]="0"></checkbox-input>
+                <div class="input_container">
+                    <signup-input title="Email" placeholder="Email" type="email" [(value)]="email"></signup-input>
+                </div>
+                <div class="input_container">
+                    <phone-input [(countryCode)]="countryCode" [(number)]="number"
+                        [(phoneNumber)]="phoneNumber"></phone-input>
+                </div>
+                <div class="input_container">
+                    <label class="upload_resume_container">
+                        <input accept=".pdf" (change)="handleResumeURL($event)" type="file">
+                        <img src="assets/icons/upload.svg" alt="">
+                        <span>upload resume</span>
+                        <div>{{resumeFileName}}</div>
+                    </label>
+                </div>
+                <div class="input_container">
+                    <signup-input title="Enter Portfolio URL(if any)" [required]="false" placeholder="URL" type="url"
+                        [(value)]="portfolioURL"></signup-input>
+                </div>
+                <div class="input_container">
+                    <div class="title">
+                        preferred job roles*
+                    </div>
+                    <checkbox-input [(checked)]="optedForID" label="Instructional Designer"
+                        [value]="0"></checkbox-input>
+                    <checkbox-input [(checked)]="optedForSE" label="Software Engineer" [value]="1"></checkbox-input>
+                    <checkbox-input [(checked)]="optedForSQE" label="Software Quality Engineer"
+                        [value]="2"></checkbox-input>
+                </div>
+                <div class="input_container">
+                    <signup-input
+                        title="If You Are registering Via A referral, Please Mention Full Name Of The Employee Who Referred You"
+                        [required]="false" placeholder="name" type="url" [(value)]="referralEmpName"></signup-input>
+                </div>
+                <div class="input_container">
+                    <checkbox-input [(checked)]="optedForJobUpdates" label="Send me job related updates via email"
+                        [value]="0"></checkbox-input>
 
-            </div>
+                </div>
+            </form>
         </div>
         <div class="display_photo_container">
             <div class="display_photo">
-                <div>
-                    <img src="assets/icons/user.png" alt="">
+                <label>
+                    <input accept="image/*" (change)="handleDisplayImg($event)" type="file">
+                    <img [src]="displayPicture? displayPicture : 'assets/icons/user.png'" alt="">
                     UPLOAD DISPLAY PICTURE
                     <span>Max. image size: 5 MB</span>
-                </div>
+                </label>
             </div>
         </div>
     </div>
     <div class="next_btn_container">
-        <button (click)="nextBtnClicked()">next</button>
+        <button type="submit" (click)="nextBtnClicked()">next</button>
     </div>
 </div>

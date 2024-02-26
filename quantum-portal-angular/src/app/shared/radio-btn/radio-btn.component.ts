@@ -16,6 +16,7 @@ export class RadioBtnComponent implements OnInit {
   @Input() name:string = ""
   @Input() id:string = ""
   @Input() label:string = ""
+  @Input() checked:boolean | null = false
 
   emitvalue(label:string){
     this.value.emit(label)

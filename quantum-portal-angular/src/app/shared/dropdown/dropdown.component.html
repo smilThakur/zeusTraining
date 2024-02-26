@@ -2,8 +2,9 @@
     <div class="dropdown_title">
         {{title}}*
     </div>
-    <div [ngClass]='{"dropdown_select":selected!==null, "dropdown_unselect":selected===null}'>
-        {{selected===null? "Select "+title:selected}}
+    <div
+        [ngClass]='{"dropdown_select":(selected!==null || option!==""), "dropdown_unselect":(selected===null&&option==="")}'>
+        {{option===""?"Select "+title:option}}
         <img src="assets/icons/arrow-down.svg" alt="" srcset="">
     </div>
     <hr class="dropdown_hr">

@@ -1,9 +1,10 @@
+<signup-header [back]="goPrevious" [cancel]="cancel" [create]="create" [canCreate]="true"></signup-header>
 <progressbar [progress]="2"></progressbar>
 <div class="edit_container">
     <div class="title">
         personal information
     </div>
-    <div class="edit_icon">
+    <div (click)="editPersonalInfo()" class="edit_icon">
         <img src="assets/icons/edit.png" width="18px" alt="">
         Edit
     </div>
@@ -15,7 +16,7 @@
                 first name
             </div>
             <div class="content">
-                Smil
+                {{firstName}}
             </div>
         </div>
         <div class="info">
@@ -23,7 +24,7 @@
                 last name
             </div>
             <div class="content">
-                thakur
+                {{lastName}}
             </div>
         </div>
         <div class="info">
@@ -31,7 +32,7 @@
                 Email
             </div>
             <div class="content">
-                smil.thakur@zeuslearning.com
+                {{email}}
             </div>
         </div>
         <div class="info">
@@ -39,15 +40,7 @@
                 phone number
             </div>
             <div class="content">
-                + 91 7487081401
-            </div>
-        </div>
-        <div class="info">
-            <div class="title">
-                phone number
-            </div>
-            <div class="content">
-                + 91 7487081401
+                {{phoneNumber}}
             </div>
         </div>
         <div class="info">
@@ -55,7 +48,7 @@
                 <img src="assets/icons/Upload_black.svg" alt="">
                 UPLOAD RESUME
                 <div class="resume_url">
-                    Smil_resume.pdf
+                    {{resumeName}}
                 </div>
             </div>
         </div>
@@ -64,44 +57,43 @@
                 enter portfolio url (if any)
             </div>
             <div class="content_url">
-                www.smil.com
+                {{portfolioURL? portfolioURL:"-"}}
             </div>
         </div>
         <div class="info">
             <div class="title">
                 preferred job roles
             </div>
-            <div class="content">
-                Instructional Designer
+            <div *ngFor="let role of preferredJobRoles" class="content">
+                {{role}}
             </div>
-            <div class="content">
-                Software Engineer
-            </div>
+
         </div>
         <div class="info">
             <div class="title">
                 If you are registering via a referral, please mention full name of the employee who referred you
             </div>
             <div class="content_url">
-                -
+                {{referralEmpName?referralEmpName:"-"}}
             </div>
         </div>
         <div class="info">
             <div class="send_updates">
-                <img src="assets/icons/check_box_black.svg" alt="">
+                <img src="{{sendJobUpdate?'assets/icons/check_box_black.svg':'assets/icons/check_box_outline.svg'}}"
+                    alt="">
                 send me job related updates via email
             </div>
         </div>
     </div>
     <div class="user_img">
-        <img src="assets/images/rdj.jpg" alt="">
+        <img [src]="displayImgURL? displayImgURL : 'assets/icons/user.png'" alt="">
     </div>
 </div>
 <div class="edit_container">
     <div class="title">
         Qualifications
     </div>
-    <div class="edit_icon">
+    <div (click)="editQualificationInfo()" class="edit_icon">
         <img src="assets/icons/edit.png" width="18px" alt="">
         Edit
     </div>
@@ -117,7 +109,7 @@
                 aggregated percentage
             </div>
             <div class="content">
-                85
+                {{aggrPercentage}}
             </div>
         </div>
         <div class="info">
@@ -125,7 +117,7 @@
                 year of passing
             </div>
             <div class="content">
-                2024
+                {{yearOfpassing}}
             </div>
         </div>
 
@@ -135,7 +127,7 @@
                     qualification
                 </div>
                 <div class="content">
-                    bachelor in technology (B.tech)
+                    {{qualifications}}
                 </div>
             </div>
             <div class="info">
@@ -143,7 +135,7 @@
                     stream
                 </div>
                 <div class="content">
-                    information technology
+                    {{stream}}
                 </div>
             </div>
         </div>
@@ -154,7 +146,7 @@
                     college
                 </div>
                 <div class="content">
-                    adani university
+                    {{collegeName}}
                 </div>
             </div>
             <div class="info">
@@ -162,7 +154,7 @@
                     if others, please enter college name
                 </div>
                 <div class="content">
-                    -
+                    {{OtherCollegeName?OtherCollegeName:"-"}}
                 </div>
             </div>
         </div>
@@ -171,7 +163,7 @@
                 where is your college located?
             </div>
             <div class="content">
-                ahmedabad
+                {{collegeLocated}}
             </div>
         </div>
     </div>
@@ -191,21 +183,21 @@
                 Applicant Type
             </div>
             <div class="content">
-                Experienced
+                {{applicantType}}
             </div>
         </div>
     </div>
 </div>
 
-<div class="sub_info_container">
-    <div class="experienced">
+<div *ngIf="applicantType === 'Experienced'" class="sub_info_container">
+    <div id="experienced">
         <div class="infos">
             <div class="info">
                 <div class="title">
                     years of experience
                 </div>
                 <div class="content">
-                    5
+                    {{yearsOfexp}}
                 </div>
             </div>
             <div class="info">
@@ -213,7 +205,7 @@
                     current CTC (in rupees)
                 </div>
                 <div class="content">
-                    7,50,000
+                    {{currentCTC}}
                 </div>
             </div>
             <div class="info">
@@ -221,38 +213,42 @@
                     expected CTC (in rupees)
                 </div>
                 <div class="content">
-                    12,50,000
+                    {{expectedCTC}}
                 </div>
             </div>
             <div class="info">
                 <div class="title">
                     select all the technologies you are expertise in
                 </div>
-                <div class="content">
-                    javascript
+                <div *ngFor="let tech of expertiseTech" class="content">
+                    {{tech}}
                 </div>
                 <div class="title">
                     if other, please mention
                 </div>
-                <div class="content">
+                <div *ngIf="!otherExpertiseTech" class="content">
                     -
+                </div>
+                <div *ngFor="let tech of otherExpertiseTech" class="content">
+                    {{tech}}
                 </div>
             </div>
             <div class="info">
                 <div class="title">
                     select all the technologies you are fimiliar in
                 </div>
-                <div class="content">
-                    Angular JS
+                <div *ngFor="let tech of fimiliarTech" class="content">
+                    {{tech}}
                 </div>
-                <div class="content">
-                    React
-                </div>
+
                 <div class="title">
                     if other, please mention
                 </div>
-                <div class="content">
+                <div *ngIf="!otherFimiliarTech" class="content">
                     -
+                </div>
+                <div *ngFor="let tech of otherFimiliarTech" class="content">
+                    {{tech}}
                 </div>
             </div>
             <div class="info">
@@ -260,7 +256,7 @@
                     Are you currently on notice period?
                 </div>
                 <div class="content">
-                    yes
+                    {{onNoticePeriod?"Yes":"No"}}
                 </div>
             </div>
             <div class="grid-2-col">
@@ -269,7 +265,7 @@
                         if yes, when willl your notice period end?
                     </div>
                     <div class="content">
-                        2-jan-2024
+                        {{noticePeriodEndDate===""?'-':noticePeriodEndDate}}
                     </div>
                 </div>
                 <div class="info">
@@ -277,7 +273,7 @@
                         how long is your notice period? (mention in months)
                     </div>
                     <div class="content">
-                        5
+                        {{noticePeriodTenure===""?'-':noticePeriodTenure}}
                     </div>
                 </div>
             </div>
@@ -286,13 +282,52 @@
                     have you appeared for any test by zeus in the past 12 months?
                 </div>
                 <div class="content">
-                    no
+                    {{appearedForZuesTest?"Yes":"No"}}
                 </div>
                 <div class="title">
                     if yes, which role did you applied for?
                 </div>
                 <div class="content">
+                    {{roleAppliedFor?roleAppliedFor:"-"}}
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div *ngIf="applicantType==='Fresher'" class="sub_info_container">
+    <div id="fresher">
+        <div class="infos">
+            <div class="info">
+                <div class="title">
+                    select all the technologies you are fimiliar in
+                </div>
+                <div *ngFor="let tech of fimiliarTech" class="content">
+                    {{tech}}
+                </div>
+                <div class="title">
+                    if other, please mention
+                </div>
+                <div *ngIf="!otherFimiliarTech" class="content">
                     -
+                </div>
+                <div *ngFor="let tech of otherFimiliarTech" class="content">
+                    {{tech}}
+                </div>
+            </div>
+            <div class="info">
+                <div class="title">
+                    have you appeared for any test by zeus in the past 12 months?
+                </div>
+                <div class="content">
+                    {{appearedForZuesTest?"Yes":"No"}}
+                </div>
+                <div class="title">
+                    if yes, which role did you applied for?
+                </div>
+                <div class="content">
+                    {{roleAppliedFor?roleAppliedFor:"-"}}
                 </div>
             </div>
 

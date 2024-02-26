@@ -1,4 +1,5 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { AbstractControl, FormControlName, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'signup-input',
@@ -13,6 +14,18 @@ export class SignupInputComponent implements OnInit {
   private _placeholder:string = "";
   private _type:string ="text";
   private _required:boolean = true;
+
+  @Input() value:string = "";
+  @Output() valueChange = new EventEmitter<string>();
+
+  @Input() fcn:string = "";
+  @Input() fg!:FormGroup;
+  
+  onchange(){
+    this.valueChange.emit(this.value);
+  }
+
+ 
 
   @Input() get title(){
     return this._title

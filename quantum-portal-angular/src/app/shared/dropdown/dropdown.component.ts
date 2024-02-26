@@ -15,13 +15,14 @@ export class DropdownComponent implements OnInit {
 
   private _options:string[] = []
 
-  @Output() optionSelected: EventEmitter<string> = new EventEmitter<string>()
+  @Input() option:string = ""
+  @Output() optionChange: EventEmitter<string> = new EventEmitter<string>()
 
 
-  selectOption(option:string){
-    this.selected = option
-    console.log(option)
-    this.optionSelected.emit(this.selected)
+  selectOption(optionSelected:string){
+    this.selected = optionSelected
+    this.option = optionSelected;
+    this.optionChange.emit(this.option)
   }
 
   @Input() get title(){

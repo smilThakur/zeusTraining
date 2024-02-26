@@ -6,7 +6,8 @@ import { SignupInputComponent } from './signup-input/signup-input.component';
 import { PhoneInputComponent } from './phone-input/phone-input.component';
 import { CheckboxInputComponent } from './checkbox-input/checkbox-input.component';
 import { RadioBtnComponent } from './radio-btn/radio-btn.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { LoadingComponent } from './loading/loading.component';
 
 
 
@@ -17,12 +18,14 @@ import { FormsModule } from '@angular/forms';
     SignupInputComponent,
     PhoneInputComponent,
     CheckboxInputComponent,
-    RadioBtnComponent
+    RadioBtnComponent,
+    LoadingComponent
   ],
   imports: [
     CommonModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
-  exports:[DropdownComponent,HeaderBtnComponent,SignupInputComponent,PhoneInputComponent,CheckboxInputComponent,RadioBtnComponent]
+  exports:[DropdownComponent,HeaderBtnComponent,SignupInputComponent,PhoneInputComponent,CheckboxInputComponent,RadioBtnComponent,LoadingComponent]
 })
 export class SharedModule { }

@@ -4,13 +4,13 @@
     </div>
     <div class="sub_header_container">
 
-        <img class="back_btn" src="assets/icons/back.svg" alt="">
+        <img (click)="back()" class="back_btn" src="assets/icons/back.svg" alt="">
         <div class="title">
             Create An Account
         </div>
         <div class="sub_header_btn_container">
-            <header-btn title="Cancel"></header-btn>
-            <header-btn title="Create" [isDisabled]="!canCreate"></header-btn>
+            <header-btn (click)="cancel()" title="Cancel"></header-btn>
+            <header-btn (click)="canCreate &&  create()" title="Create" [isDisabled]="!canCreate"></header-btn>
         </div>
 
     </div>

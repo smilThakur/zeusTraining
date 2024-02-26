@@ -1,3 +1,17 @@
+.loading {
+  height: 100vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.upload_resume_container {
+  input {
+    display: none;
+  }
+  div {
+    margin-left: 5px;
+  }
+}
 .main_details_container {
   padding: 16px;
   background-color: white;
@@ -122,7 +136,7 @@
 
 .instructions {
   ul {
-    list-style-type: "-";
+    list-style-type: none;
     font-size: 12px;
     margin-top: 16px;
     li {
@@ -153,6 +167,8 @@
 
 .main_container {
   background-color: white;
+  overflow: hidden;
+
   .content {
     padding: 16px;
   }
@@ -190,14 +206,8 @@
   }
 }
 
-.instructional_desinger {
+.margin_con {
   margin-top: 25px;
-}
-
-#instructional_desinger {
-  transition: all 1s ease;
-  overflow: hidden;
-  max-height: 0px;
 }
 
 .bottom_btn {

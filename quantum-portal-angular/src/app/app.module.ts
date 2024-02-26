@@ -8,9 +8,11 @@ import { SharedModule } from './shared/shared.module';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { LoginModule } from './login/login.module';
 import { SignUpModule } from './sign-up/sign-up.module';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { WalkinModule } from './walkin/walkin.module';
 import { RouterModule } from '@angular/router';
+import { HttpClientModule, HTTP_INTERCEPTORS } from "@angular/common/http"
+import { TokenInterceptorService } from './databaseServices/token-interceptor.service';
 
 @NgModule({
   declarations: [
@@ -27,9 +29,10 @@ import { RouterModule } from '@angular/router';
     LoginModule,
     SignUpModule,
     WalkinModule,
-    
+    ReactiveFormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [{ provide: HTTP_INTERCEPTORS, useClass: TokenInterceptorService, multi: true }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

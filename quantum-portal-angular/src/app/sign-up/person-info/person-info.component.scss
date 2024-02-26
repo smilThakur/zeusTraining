@@ -12,6 +12,9 @@
       .input_container {
         margin-bottom: 40px;
         .upload_resume_container {
+          input {
+            display: none;
+          }
           cursor: pointer;
           display: flex;
           align-items: center;
@@ -22,6 +25,10 @@
             text-transform: uppercase;
             font-size: 14px;
             color: #1f7a54;
+          }
+          div {
+            font-size: 14px;
+            margin-left: 5px;
           }
         }
 
@@ -37,16 +44,21 @@
         display: flex;
         justify-content: end;
         margin: 50px;
-        div {
+        label {
           display: flex;
           flex-direction: column;
           justify-content: center;
           align-items: center;
           color: #1f7a54;
           font-size: 12px;
+          input {
+            display: none;
+          }
           img {
             width: 120px;
+            height: 120px;
             margin-bottom: 20px;
+            object-fit: contain;
           }
           span {
             margin-top: 10px;

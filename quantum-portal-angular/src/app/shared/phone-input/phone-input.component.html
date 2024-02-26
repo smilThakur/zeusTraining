@@ -1,3 +1,4 @@
 <label for="phn">Phone Number*</label>
 <br>
-+<input class="code" type="tel"><input class="num" type="tel">
++<input [(ngModel)]="countryCode" (ngModelChange)="onChange()" class="code" type="tel">
+<input [(ngModel)]="number" (ngModelChange)="onChange()" class="num" type="tel">
